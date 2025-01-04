@@ -1,0 +1,26 @@
+body{   
+}
+
+section{
+    display: flex;
+}
+
+.quadrados{
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+}
+
+#teste2{
+    margin-left: 89%;
+}
+
+#teste3{
+    margin-top: 36%;
+}
+
+#teste4{
+    margin-left: 89%;
+    margin-top: 36%;
+}
+
