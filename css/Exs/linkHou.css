@@ -1,0 +1,7 @@
+img:hover{
+    border-style: solid;
+}
+
+img:active{
+    height: 300px;
+}

@@ -1,0 +1,22 @@
+body{}
+
+div{
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.impar{
+ background-color: yellow;
+ text-align: center;
+ width: 20px;
+}
+
+.par{
+    text-align: center;
+    width: 20px;
+    background-color: bisque;
+}

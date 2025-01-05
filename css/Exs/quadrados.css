@@ -11,16 +11,23 @@ section{
     border-style: solid;
 }
 
+
 #teste2{
-    margin-left: 89%;
+    position: absolute;
+   right: 8px;
+   top: 8px;
 }
 
 #teste3{
-    margin-top: 36%;
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+    bottom: 8px;
 }
 
 #teste4{
-    margin-left: 89%;
-    margin-top: 36%;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
 }
 
