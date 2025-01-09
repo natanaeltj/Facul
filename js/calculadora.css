@@ -1,0 +1,11 @@
+#botao{
+    height: 20px;
+    width: 40px;
+    background-color: rgb(13, 190, 72);
+    text-align: center;
+    border-radius: 4px;
+}
+
+#botao:hover{
+    
+}
