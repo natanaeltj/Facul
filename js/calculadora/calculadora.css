@@ -4,5 +4,16 @@
     background-color: rgb(13, 190, 72);
     text-align: center;
     border-radius: 4px;
+    user-select: none; /*mpede que o texto do elemento seja selecionado. Cada browser trata isso de umaforma diferente, 
+    pois não é padronizado pela W3C. Por isso é necessário usar prefixos de fabricante: -moz, -webkit e -ms.*/
 }
 
+#botao:hover{
+    cursor:pointer;
+}
+
+#botao:active{
+    background-color: rgb(5, 124, 45);
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
