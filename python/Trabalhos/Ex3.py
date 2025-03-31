@@ -1,6 +1,5 @@
 print('Bem vindo a copiadora de Natanael Teixeira \n')
 
-servico_preco = 0
 
 def escolha_servico():
     servico = ''
@@ -36,6 +35,16 @@ def num_pagina():
             print('Esse não é um número válido!! Por favor tente novamente')
 
 paginas = num_pagina()
+if paginas >= 20 and paginas < 200:
+    desconto = 15 / 100
+elif paginas >= 200 and paginas < 2000:
+    desconto =  20 / 100
+elif paginas >= 2000 and paginas < 20000:
+    desconto = 25 / 100
+else:
+    desconto = 0
+paginas_desconto = paginas - (paginas * desconto)
+
 
 
 def servico_extra():
@@ -44,28 +53,20 @@ def servico_extra():
         print('Deseja adicioar algum serviço? \n 1 - Encardenação Simples - R$ 15.00 \n 2 - Encardenação Capa Dura - R$ 40.00 \n 0 - Não desejo mais nada')
         servico_add = input('>>')
         if(servico_add == '1'):
-            servico_preco = 15.00
-            return servico_preco
+            return 15.00
         elif(servico_add == '2'):
-            servico_preco = 40.00
-            return servico_preco
+            return 40.00
         elif(servico_add == '0'):
-            servico_preco = 0
-            return servico_preco
+            return 0
         else:
             print('Valor invalido, por favor insira novamente')
 extra = servico_extra()
 
-if extra == '1':
-    servico_preco = 15.00
-elif extra == '2':
-    servico_preco = 40.00
-elif extra == '0':
-    extra = 0
 
 
 
-total = custo_p_pag * paginas + servico_preco
+
+total = (custo_p_pag * paginas_desconto) + extra
 
 if extra == None:
     print(f'Total: R$ {total} (serviço: R${custo_p_pag}) * páginas: {paginas} (SEM SERVIÇO ADICIONAL)')
