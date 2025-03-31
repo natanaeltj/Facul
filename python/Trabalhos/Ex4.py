@@ -1,6 +1,5 @@
-lista_livro = []
-id_livro = {}
-id_global = 0
+lista_livro = [] #Irá guardar todos os objetos
+id_global = 0 #id para contagem de livros criados
 global contador
 
 print('Bem vindo a livraria de Natanael Teixeira')
@@ -30,8 +29,8 @@ def cadastrar_livro(id): #adiciona o id,nome,autor e editora do livro a um objet
     autor_livro = input('Por favor insira com o autor do livro: ')
 
     editora_livro = input('Por favor insira o editor(a) do livro: ')
-    id_global += 1
-    livro = {
+    id_global += 1 #adiciona o id automaticamente a cada livro criado
+    livro = { #salva as informações obtidas acima temporariamente e as salva para sempre no array lista_livro
         'id': id_global,
         'nome': nome_livro,
         'autor': autor_livro,
