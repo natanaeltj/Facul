@@ -43,6 +43,7 @@ elif paginas >= 2000 and paginas < 20000:
     desconto = 25 / 100
 else:
     desconto = 0
+
 paginas_desconto = paginas - (paginas * desconto) #calcula o desconto
 
 
@@ -64,9 +65,9 @@ extra = servico_extra()
 total = (custo_p_pag * paginas_desconto) + extra #calcula o valor total
 
 if extra == None: #mostra o valor total e a função sem serviço e com serviço adicional
-    print(f'Total: R$ {total} (serviço: R${custo_p_pag}) * páginas: {paginas} (SEM SERVIÇO ADICIONAL)')
+    print(f'Total: R$ {total} (serviço: R${custo_p_pag}) * páginas: {paginas_desconto} (SEM SERVIÇO ADICIONAL)')
 else:
-    print(f'Total: R$ {total} serviço: R$ {custo_p_pag} * páginas: {paginas} + extra: R$ {extra}')
+    print(f'Total: R$ {total} serviço: R$ {custo_p_pag} * páginas: {paginas_desconto} + extra: R$ {extra}')
 
 
 
