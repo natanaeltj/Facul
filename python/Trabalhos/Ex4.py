@@ -39,8 +39,6 @@ def cadastrar_livro(id): #adiciona o id,nome,autor e editora do livro a um objet
     lista_livro.append(livro)
     print(f'Livro {nome_livro} cadastrado com sucesso')
 
-
-
 def consultar_livro(): #Consulta os livros entrando no array e lendo o objeto
     print('-'* 60)
     print('-'*20 + 'MENU CONSULTAR LIVRO' + '-'*20)
@@ -96,7 +94,6 @@ def remover_livro(): #Remove os livros por id
 
         except ValueError:
             print('digite um número válido para o id por favorrrr.')
-
 
 while True: #garante que a função menu_principal() continue rodando
     escolha = menu_principal()
